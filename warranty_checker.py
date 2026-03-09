@@ -10,8 +10,8 @@ while True:
     while len(serial_number) == 0:
         print("Please input the correct serial number")
         serial_number = input("Please enter serial number: ")
-    # The two foward slashes are used to determine if the scanner was coded in epic.
-    # I allow the inputs of a scanner coded with epic, direct scanning with carriage return, or manual input
+    # The two foward slashes are used to determine if the scanner is using a specific code
+    # I allow the inputs of a specified scanner code, direct scanning with carriage return, or manual input
     # If the string contains the two forward slashes, it is sliced from the beginning and end
     if "\\" in serial_number and "311" == serial_number[1:4]:
         print("The serial number is: " + serial_number[1:-1])
@@ -66,4 +66,5 @@ while True:
 
 
    
+
 
